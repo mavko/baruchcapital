@@ -83,7 +83,11 @@ dividers
     box-shadow: inset -1px 0 #e3e8ee;
 }
 
-backgrounds 
+** BACKGROUNDS **
+.boxBgTransparent {
+    background-color: none !important;
+    background: transparent !important;
+}
 .boxBgOffset {
     background-color: #f7fafc;
 }
@@ -141,10 +145,12 @@ backgrounds
     justify-content: space-between;
 }
 
-spacing custom .mt-lg-13 {
+** spacing custom **
+.mt-lg-13 {
     margin-top: 76px !important;
 }
 
-overrides .flexEqual {
+** overrides ** 
+.flexEqual {
     flex: 1 1 0%;
 }

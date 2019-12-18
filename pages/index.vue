@@ -1,40 +1,60 @@
 <template light>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="text-center mt-6 mb-6">
-        <logo />
-      </div>
-      <v-card class="contentPane" light>
-        <v-card-title class="headline">
-          Welcome to Baruch Capital. 
-        </v-card-title>
-        <v-card-subtitle>
-          This is the personal page of its propriotor Sebastian Selling, 
-          a Malta-based, Swedish-born, visual designer by trade, turned swing trader and investor. 
-          <br>
-          This is his journal, detailing process, progress and musings on his projects and life in general.
-        </v-card-subtitle>
-        <v-card-actions>
+      <div class="float-left contentPane inverse">
+          <div class="mt-6 mb-6">
+            <logo />
+          </div>
+          <h1 style="color: #fff;"  class="mb-3">
+            Welcome to Baruch Capital.
+          </h1>
+          <p style="color: #fff;" class="mb-6">
+            A journal of sorts, detailing process, progress and musings regarding the financial markets.
+          </p>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
+          <v-btn nuxt to="/inspire">
+            Langa pengar
           </v-btn>
-        </v-card-actions>
-      </v-card>
+
+      </div>
+      <Header />
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Header from '~/components/Header.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Header
   }
 }
 </script>
 
 <style scoped>
 @import "@/assets/variables.scss";
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.boxBgTransparent p {
+    max-width: 50%;
+}
+.contentPane {
+    max-width: 1092px;
+    min-width: 760px;
+    width: calc(100vw - 302px);
+    margin: 0 auto;
+}
+.inverse {
+
+    text-shadow: 0 2px 20px 
+
+    rgba(0,0,0,.16);
+
+}
 </style>
