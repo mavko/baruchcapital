@@ -11,10 +11,6 @@ export default {
     NuxtChild,
     NuxtError
   },
-  css: [
-    // SCSS file in the project
-    '@/assets/css/variables.scss'
-  ],
   props: {
     nuxtChildKey: {
       type: String,
