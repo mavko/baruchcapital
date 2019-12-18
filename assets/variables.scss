@@ -1,4 +1,150 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
+** LAYOUT **
+#app {
+    color: #3c4257;
+    background: #e3e8ee;
+    background-color: #e3e8ee;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;
+}
+
+.contentPane {
+    max-width: 1092px;
+    min-width: 760px;
+    width: calc(100vw - 302px);
+    margin: 0 auto;
+}
+
+.headerMenu {
+    transform: translateY(0px);
+    left: 0px;
+    right: 0px;
+    height: 68px;
+    width: calc(100vw - 270px);
+    max-width: 1124px;
+    min-width: 792px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    margin: 0 auto;
+    background: transparent !important;
+    box-shadow: none;
+}
+
+** TEXT **
+.titleTextMedium {
+    font-size: 16px;
+    font-feature-settings: "pnum";
+    font-variant: proportional-nums;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 !important;
+}
+
+.titleTextSmall {
+    font-size: 13px;
+    color: #3c4257;
+    font-feature-settings: "pnum";
+    font-variant: proportional-nums;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+** SHADOWS **
+.cardShadowMedium {
+    box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cardShadowSmall {
+    box-shadow: 0 2px 5px 0 rgba(60, 66, 87, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+** RADIUS **
+.cardRadiusAll {
+    border-radius: 4px;
+}
+
+.cardRadiusTop {
+    border-radius: 4px 4px 0 0;
+}
+
+.cardRadiusBtm {
+    border-radius: 0 0 4px 4px;
+}
+
+dividers 
+.boxDividerBtm {
+    box-shadow: inset 0 -1px #e3e8ee;
+}
+
+.boxDividerRight {
+    box-shadow: inset -1px 0 #e3e8ee;
+}
+
+backgrounds 
+.boxBgOffset {
+    background-color: #f7fafc;
+}
+
+** BUTTONS ** 
+.btnBlue:hover {
+    background-color: #7795f8;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.btnBlue {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(84, 105, 212);
+    background: rgb(84, 105, 212);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+        rgb(84, 105, 212) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
+}
+
+.btnWhite {
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(60, 66, 87, 0.12) 0px 2px 5px 0px;
+}
+
+** TABLES ** 
+.cardTableRow {
+    position: relative;
+    font-size: 20px;
+    color:
+        #3c4257;
+    display: flex;
+    flex-direction: row;
+    height: 76px;
+    z-index: 0;
+    border-bottom: 1px solid rgba(193, 201, 210, .5);
+    padding: 16px 20px;
+    justify-content: space-between;
+}
+
+spacing custom .mt-lg-13 {
+    margin-top: 76px !important;
+}
+
+overrides .flexEqual {
+    flex: 1 1 0%;
+}
