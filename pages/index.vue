@@ -15,7 +15,14 @@
           <v-btn nuxt to="/inspire">
             Langa pengar
           </v-btn>
-
+          <no-ssr>
+            <div>
+              <div class="grid">
+                <ChartBar />
+                <ChartLine />
+              </div>
+            </div>
+          </no-ssr>
       </div>
       <Header />
     </v-flex>
@@ -25,11 +32,16 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import Header from '~/components/Header.vue'
-
+import ChartBar from "@/components/chart-bar";
+import ChartDoughnut from "@/components/chart-doughnut";
+import ChartLine from "@/components/chart-line";
 export default {
   components: {
     Logo,
-    Header
+    Header,
+    ChartBar,
+    ChartDoughnut,
+    ChartLine
   }
 }
 </script>
